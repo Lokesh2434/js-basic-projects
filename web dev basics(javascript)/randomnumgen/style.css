@@ -1,0 +1,21 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+
+#myButton{
+    font-size: 5em;
+    padding: 5px , 25px;
+    border-radius: 5px;
+
+}
+#myLabel{
+
+    font-size: 5em;
+    font-family: 'Courier New', Courier, monospace;
+}
+    
+
+
+

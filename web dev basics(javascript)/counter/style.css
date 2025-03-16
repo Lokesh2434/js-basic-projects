@@ -1,0 +1,27 @@
+#count{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#mybuttons{
+    
+    text-align: center;
+    
+}
+
+.button{
+    padding: 10px;
+    font-size: 1.5em;
+    color: #fdfdfd;
+    background-color: #11bc94;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.button:hover{
+
+    background-color: #480a0a;
+}
