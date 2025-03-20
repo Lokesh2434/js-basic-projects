@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Knowledge Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="registration" class="registration-container">
+            <h1>Welcome to the Quiz!</h1>
+            <p>Test your knowledge with our interactive quiz. Register below to get started.</p>
+            <form id="registrationForm">
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <div class="difficulty-selector">
+                    <p>Select difficulty level:</p>
+                    <div class="difficulty-options">
+                        <label>
+                            <input type="radio" name="difficulty" value="easy" checked>
+                            <span class="difficulty-label easy">Easy</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="difficulty" value="medium">
+                            <span class="difficulty-label medium">Medium</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="difficulty" value="hard">
+                            <span class="difficulty-label hard">Hard</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit">Start Quiz</button>
+            </form>
+        </div>
+
+        <div id="quizContainer" class="quiz-container">
+            <h1>Knowledge Challenge</h1>
+            <p class="instructions">Answer all questions within the time limit. Select the best answer for each question and click Submit when you're done.</p>
+            <div id="quiz"></div>
+            <button id="submit">Submit Quiz</button>
+            <div id="results"></div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Interactive Quiz - gopika. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+
+    <!-- Add scroll behavior fix for older browsers -->
+    <script>
+        if (typeof Element.prototype.scrollIntoView !== 'function') {
+            Element.prototype.scrollIntoView = function() {
+                window.scrollTo(0, this.offsetTop);
+            };
+        }
+    </script>
+</body>
+</html>
